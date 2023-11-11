@@ -1,0 +1,14 @@
+.footer-text{
+    color: #b3c5d9;
+}
+
+.copyright{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconDesign{
+    max-width: 130px;
+}

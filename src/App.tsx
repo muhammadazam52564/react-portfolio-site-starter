@@ -3,9 +3,21 @@ import { Content, Header, Footer } from 'antd/es/layout/layout';
 import image from "../public/logo.png";
 import React, { useState } from 'react';
 import { MenuOutlined } from '@ant-design/icons';
-import Nav from './Nav';
-import Hero from './Hero';
-import Socials from './Hero/Socials';
+import {
+  BrowserRouter as Router, 
+  Routes,
+  Route,
+} from "react-router-dom";
+import Nav from './Components/Nav';
+import Hero from './Components/Hero';
+import Socials from './Components/Hero/Socials';
+import Home from './Pages/Home/Home';
+import Company from './Pages/Company/Company';
+import Services from './Pages/Services/Services';
+import Products from './Pages/Products/Products';
+import Contact from './Pages/Contact/Contact';
+import FooterArea from './Components/Footer/Footer';
+
 const App: React.FC = () => {
   /** States */  
   const [open, setOpen] = useState(false);
@@ -23,6 +35,7 @@ const App: React.FC = () => {
   
   return (
     <Layout>
+      <Router>
       <Hero/>
       <Header style={{ position: 'sticky',  top: 0 }} className='p-x-responsive c-bg-white' >
         <Row  align="middle">
@@ -52,8 +65,21 @@ const App: React.FC = () => {
             </Col>
         </Row>
       </Header>
-      <Content style={{ height: "220vh" }} ></Content>
-      <Footer>Footer</Footer>
+      <Content style={{
+        height: "85vh"
+      }}>
+        <Routes>
+          <Route element={<Home />} path={"/"} />
+          <Route element={<Company />} path={"/company"} />
+          <Route element={<Services />} path={"/services"} />
+          <Route element={<Products />} path={"/products"} />
+          <Route element={<Contact />} path={"/contact"} />
+        </Routes>
+      </Content>
+      <Footer className='footerStyle'>
+        <FooterArea />
+      </Footer>
+      </Router>
     </Layout>
   )
 }

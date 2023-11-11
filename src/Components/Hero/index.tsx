@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         <Row className='hero-top' align={"middle"}>
             <Col span={20} offset={2} className='hero-col'>
               <div className='phone-email'>
-                <AiFillPhone /><h4>+923004001283</h4>
+                <AiFillPhone /><h4>+92 300 400 1283</h4>
               </div>
               <div className='social-icons'>
                 <Socials />

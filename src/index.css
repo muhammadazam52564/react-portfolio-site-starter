@@ -1,7 +1,7 @@
 
 body {
   background-color: #a69c9c;
-  min-width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
 }
 *{
@@ -12,6 +12,7 @@ body {
 .c-bg-white{
   background-color: #ffffff;
 }
+
 .mobile{
   display: none;
 
@@ -24,14 +25,17 @@ body {
 }
 
 
-
+/* Footer */
+.footerStyle{
+  background-color: #00407e;
+}
 @media screen and (max-width: 600px)  {
   .p-x-responsive {
     padding: 0px 10px;
   }
 }
 /* Menu Shifting on 500  */
-@media screen and (max-width: 500px)  {
+@media screen and (max-width: 540px)  {
   .p-x-responsive {
     padding: 0px 30px;
   }
