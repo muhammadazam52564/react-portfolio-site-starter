@@ -1,0 +1,22 @@
+.icon-design{
+    /* border-radius: 100%;  */
+    padding: 0;
+    width: auto;
+    height: auto;
+    background-color: #ffffff; 
+    margin: 3px;
+    padding: 0px 2px;
+}
+.icon-design svg {
+    margin-bottom: -3px;
+}
+.insta{ color:#d62976;}
+.insta:hover{ color:#d62976; }
+.wa{ color:#25d366; }
+.wa:hover{ color:#25d366; }
+.fb{ color:#3b5998;}
+.fb:hover{ color:#3b5998; }
+.linkedin{ color:#0077b5; }
+.linkedin:hover{ color:#0077b5; }
+.mail{ color:#0077b5; }
+.mail:hover{ color:#0077b5; }

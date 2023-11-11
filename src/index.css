@@ -1,0 +1,45 @@
+
+body {
+  background-color: #a69c9c;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.c-bg-white{
+  background-color: #ffffff;
+}
+.mobile{
+  display: none;
+
+}
+.mobile > {
+  width: 50px;
+}
+.desktop{
+  display: block;
+}
+
+
+
+@media screen and (max-width: 600px)  {
+  .p-x-responsive {
+    padding: 0px 10px;
+  }
+}
+/* Menu Shifting on 500  */
+@media screen and (max-width: 500px)  {
+  .p-x-responsive {
+    padding: 0px 30px;
+  }
+  .mobile{
+    display: block;
+  }
+  .desktop{
+    display: none;
+  }
+}
+
