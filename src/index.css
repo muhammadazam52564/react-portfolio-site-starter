@@ -16,7 +16,7 @@ body {
   display: none;
 
 }
-.mobile > {
+.mobile > svg{
   width: 50px;
 }
 .desktop{

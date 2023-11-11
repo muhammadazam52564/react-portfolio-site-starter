@@ -10,7 +10,6 @@ const App: React.FC = () => {
   /** States */  
   const [open, setOpen] = useState(false);
 
-
     /** Heandlers */  
   const openCloseHandler  = (state : boolean)=>{
     setOpen(state)
